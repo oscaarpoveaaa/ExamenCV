@@ -1,0 +1,41 @@
+.titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:25px;
+    color: white;
+}
+.subtitulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    color: rgb(0, 0, 0);
+}
+.tituloprogreso{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:17px;
+    color: rgb(43, 43, 43);
+}
+
+.enlaces{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.separador{
+    border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+.fondo-izq{
+    background-color: rgb(107, 107, 107);
+}
+
+.nombre{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:35px;
+    color: black;
+}
+.titulo-drc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:25px;
+    color: black;
+    border-bottom: black solid;
+}
