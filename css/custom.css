@@ -25,7 +25,7 @@
 }
 
 .fondo-izq{
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(141, 165, 189);
 }
 
 .nombre{
@@ -38,4 +38,12 @@
     font-size:25px;
     color: black;
     border-bottom: black solid;
+}
+
+.enlaces-experiencia{
+    text-decoration: none;
+    color: black;
+}
+body{
+    color: black;
 }
