@@ -34,10 +34,3 @@ function comprobarTelefono(telefono) {
         alert("Introduce un teléfono válido")
     }
 }
-
-function recibir(numero)
-{
-  var valor = document.getElementById("texto"+numero).value;
-  document.getElementById("codigo").value=valor;        
-    
-} 
