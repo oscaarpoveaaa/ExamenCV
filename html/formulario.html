@@ -39,17 +39,17 @@
       </nav>
       <div class="container !direction !spacing">
 
-        <form class="row g-3 needs-validation">
+        <form class="row g-3">
           <div class="col-md-4">
             <label for="validationCustom01" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" onblur="" >
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre" size="35" >
             <div class="valid-feedback">
               
             </div>
           </div>
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label">Motivo del contacto</label>
-            <input type="text" class="form-control" id="validationCustom02" value="" >
+            <input type="text" class="form-control" name="motivo" id="motivo" placeholder="Introduce el motivo del contacto" size="35"  >
             <div class="valid-feedback">
               
             </div>
@@ -57,7 +57,7 @@
           <div class="col-md-4">
             <label for="" class="form-label">Email</label>
             <div class="input-group">
-              <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  >
+              <input type="text" class="form-control" name="email" id="email" placeholder="Introduce el email" size="35" >
               <div class="valid-feedback">
                 
               </div>
@@ -65,12 +65,30 @@
           </div>
           <div class="col-md-6">
             <label for="validar" class="form-label">Teléfono</label>
-            <input type="number" class="form-control" id="validationCustom03" name="numero">
+            <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Introduce tu telefono" size="35" >
             <div class="valid-feedback">
             </div>
           <div class="col-12 mt-4">
-            <button class="btn btn-primary" type="submit" onclick="enviar()">Enviar</button>
+            <button class="btn btn-primary" type="button" onclick="capturar()">Comprobar</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
           </div>
         </form>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mensaje enviado correctamente</h5>
+        <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      Su mensaje se ha enviado correctamente, en breve me pondré en contacto con usted <br>
+      Un saludo
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
