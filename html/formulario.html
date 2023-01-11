@@ -38,8 +38,8 @@
         </div>
       </nav>
       <div class="container !direction !spacing mb-5">
-        <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div1">Recuerda que el nombre no puede estar vacio</div>
-        <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div2"><p>Recuerda que el motivo del contacto no puede estar vacío ni superar los 30 caracteres</p></div>
+        <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div1"><i class="bi bi-person"> </i>Recuerda que el nombre no puede estar vacio</div>
+        <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div2"><i class="bi bi-blockquote-left"> </i>Recuerda que el motivo del contacto no puede estar vacío ni superar los 30 caracteres</div>
         <form class="row g-3 mt-2">
           <div class="col-md-4">
             <label for="validationCustom01" class="form-label">Nombre <i class="bi bi-person"></i></label>
@@ -69,6 +69,10 @@
             <input type="number" class="form-control" name="telefono" id="telefono" placeholder="Introduce tu telefono" size="35" >
             <div class="valid-feedback">
             </div>
+            <div class="col-md-6 mt-3">
+              <div class="alert alert-secondary" role="alert">Recuerda que este formulario es ficticio,no se va a enviar ningún tipo de mensaje</div>
+            </div>
+
           <div class="col-12 mt-4">
             <button class="btn btn-primary" type="button" onclick="capturar()">Comprobar</button>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
