@@ -37,25 +37,26 @@
           </div>
         </div>
       </nav>
-      <div class="container !direction !spacing">
-
-        <form class="row g-3">
+      <div class="container !direction !spacing mb-5">
+        <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div1">Recuerda que el nombre no puede estar vacio</div>
+        <div class="alert alert-warning col-md-12 mt-5" role="alert" id="div2"><p>Recuerda que el motivo del contacto no puede estar vacío ni superar los 30 caracteres</p></div>
+        <form class="row g-3 mt-2">
           <div class="col-md-4">
-            <label for="validationCustom01" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre" size="35" >
+            <label for="validationCustom01" class="form-label">Nombre <i class="bi bi-person"></i></label>
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre" size="35" onfocus="mostrar('div1')" onblur="ocultar('div1')">
+            <div class="valid-feedback">
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Motivo del contacto <i class="bi bi-blockquote-left"></i></label>
+            <input type="text" class="form-control" name="motivo" id="motivo" placeholder="Introduce el motivo del contacto" size="35" onfocus="mostrar('div2')" onblur="ocultar('div2')" >
             <div class="valid-feedback">
               
             </div>
           </div>
           <div class="col-md-4">
-            <label for="validationCustom02" class="form-label">Motivo del contacto</label>
-            <input type="text" class="form-control" name="motivo" id="motivo" placeholder="Introduce el motivo del contacto" size="35"  >
-            <div class="valid-feedback">
-              
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="" class="form-label">Email</label>
+            <label for="" class="form-label"> Email <i class="bi bi-envelope"></i></label>
             <div class="input-group">
               <input type="text" class="form-control" name="email" id="email" placeholder="Introduce el email" size="35" >
               <div class="valid-feedback">
@@ -63,8 +64,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <label for="validar" class="form-label">Teléfono</label>
+            <div class="col-md-12">
+            <label for="validar" class="form-label">Teléfono <i class="bi bi-telephone"></i></label>
             <input type="number" class="form-control" name="telefono" id="telefono" placeholder="Introduce tu telefono" size="35" >
             <div class="valid-feedback">
             </div>
